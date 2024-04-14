@@ -1,5 +1,5 @@
 const OrderRoutes = require('express').Router();
-const OrderController = require('./../controllers/order_controller');
+const OrderController = require('../controllers/order_controller');
 
 OrderRoutes.get("/:userId", OrderController.fetchOrdersForUser);
 OrderRoutes.post("/",OrderController.createOrder);
